@@ -39,51 +39,108 @@
     <!-- Docs main -->
     <section class="docs-main my-4">
         <div class="container grid">
-            <div class="card bg-light p-3">
+            <div class="card bg-light p-3" id="doc-links">
                 <h3 class="my-2">Essentials</h3>
                 <nav>
                     <ul>
-                        <li><a class="text-primary" href="#">Introduction</a></li>
-                        <li><a href="#">About Loruki</a></li>
-                        <li><a href="#">Installation</a></li>
+                        <li data-tab-target="#intro"><a>Introduction</a></li>
+                        <li data-tab-target="#about"><a>About Loruki</a></li>
+                        <li data-tab-target="#install"><a>Installation</a></li>
                     </ul>
                 </nav>
 
                 <h3 class="my-2">Deployment</h3>
                 <nav>
                     <ul>
-                        <li><a href="#">Setting up a container</a></li>
-							<li><a href="#">Using the CLI</a></li>
-							<li><a href="#">Managing resources</a></li>
-							<li><a href="#">Upgrade & downgrade</a></li>
+                        <li data-tab-target="#setup"><a>Setting up a container</a></li>
+							<li data-tab-target="#usingCLI"><a>Using the CLI</a></li>
+							<li data-tab-target="#managing"><a>Managing resources</a></li>
+							<li data-tab-target="#grade"><a>Upgrade & downgrade</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="card">
-                <h2>Introduction</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illo facere perferendis laborum? Similique recusandae incidunt eos dolorum aliquam ipsam unde perspiciatis laudantium totam quam laborum velit, at maxime minus?</p>
+            <div class="tab-content">
+                <div class="card active" id="intro" data-tab-content>
+                    <h2>Introduction</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illo facere perferendis laborum? Similique recusandae incidunt eos dolorum aliquam ipsam unde perspiciatis laudantium totam quam laborum velit, at maxime minus?</p>
 
-                <div class="alert alert-success">
-                    <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi?
+                    <div class="alert alert-success">
+                        <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi?
+                    </div>
+
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima totam magni eius vitae velit id, atque veritatis! At, vero porro.</p>
+                    <a href="#" class="btn btn-primary">Install CLI</a>
+
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>Windows 10, Mac OSX, Linux</li>
+                        <li>Node.js v12 or higher</li>
+                    </ul>
+
+                    <h3>Install</h3>
+                    <p>Mac (Homebrew)</p>
+                    <pre><code>$ brew install loruki-cli</code></pre>
+                    <p>NPM</p>
+                    <pre><code>$ npm install loruki-cli</code></pre>
+                    <p>Yarn</p>
+                    <pre><code>$ yarn install loruki-cli</code></pre>
+
                 </div>
-
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima totam magni eius vitae velit id, atque veritatis! At, vero porro.</p>
-                <a href="#" class="btn btn-primary">Install CLI</a>
-
-                <h3>Requirements</h3>
-                <ul>
-                    <li>Windows 10, Mac OSX, Linux</li>
-                    <li>Node.js v12 or higher</li>
-                </ul>
-
-                <h3>Install</h3>
-                <p>Mac (Homebrew)</p>
-                <pre><code>$ brew install loruki-cli</code></pre>
-                <p>NPM</p>
-                <pre><code>$ npm install loruki-cli</code></pre>
-                <p>Yarn</p>
-                <pre><code>$ yarn install loruki-cli</code></pre>
+                <div class="card" id="about" data-tab-content>
+                    <h2>About Loruki</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus hic, expedita dolorem ratione soluta nihil quod vero accusamus ex molestiae asperiores rerum beatae provident a reiciendis, fugiat id explicabo Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur distinctio necessitatibus maiores doloremque aperiam alias iusto velit sunt totam perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, ducimus!</p>
+                    <h2>We have a lot of experience!</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel odit provident laboriosam, harum esse amet sequi! Porro, officia! Vel odio sit impedit vero, explicabo iusto, earum nisi magnam dolore adipisci a itaque molestias qui aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nisi et eos obcaecati suscipit esse reiciendis ipsam libero veniam nemo.</p>
+                </div>
+                <div class="card" id="install" data-tab-content>
+                    <h2>Installation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, repellat!</p>
+                    <h3>Step 1</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h3>Step 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quis provident nobis deleniti ratione sint.</p>
+                    <h3>Step 3</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic asperiores velit facere necessitatibus repudiandae dicta.</p>
+                </div>
+                <div class="card" id="setup" data-tab-content>
+                    <h2>Setting up a container</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, repellat Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, harum.
+                    </p>
+                    <h3>Step 1</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h3>Step 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quis provident nobis deleniti ratione sint.</p>
+                    <h3>Step 3</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic asperiores velit facere necessitatibus repudiandae dicta.</p>
+                    <h3>Step 4</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic asperiores velit</p>
+                    <h3>Step 4</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic asperiores velit facere necessitatibus repudiandae dicta.</p>
+                </div>
+                <div class="card" id="usingCLI" data-tab-content>
+                    <h2>Using the CLI</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus hic, expedita dolorem ratione soluta nihil quod vero accusamus ex molestiae asperiores rerum beatae provident a reiciendis, fugiat id explicabo Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur distinctio necessitatibus maiores doloremque aperiam alias iusto velit sunt totam perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, ducimus!</p>
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus inventore laboriosam ipsa doloribus beatae. Quis voluptatem velit ab quas magnam!</p>
+                </div>
+                <div class="card" id="managing" data-tab-content>
+                    <h2>Managing resources</h2>
+                    <h3>Very Easy</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus hic, expedita dolorem ratione soluta nihil quod vero accusamus ex molestiae asperiores </p>
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus inventore laboriosam ipsa doloribus beatae. Quis voluptatem velit ab quas magnam!</p>
+                </div>
+                <div class="card" id="grade" data-tab-content>
+                    <h2>Upgrade & downgrade</h2>
+                    <h3>Try the latest version here</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a>Click here</a>
+                    <h3>Having problems?</h3>
+                    
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus inventore laboriosam ipsa doloribus beatae. Quis voluptatem velit ab quas magnam!</p>
+                    <a>Click here</a>
+                </div>
 
             </div>
         </div>
@@ -112,5 +169,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const tabs = document.querySelectorAll('[data-tab-target]');
+        const tabContents = document.querySelectorAll('[data-tab-content]');
+
+        tabs.forEach(tab =>{
+            tab.addEventListener('click', () =>{
+                const target =document.querySelector(tab.dataset.tabTarget)
+
+                tabContents.forEach(tabContent =>{ tabContent.classList.remove('active');
+                })
+
+                target.classList.add('active')
+            })
+        })
+
+
+    </script>
 </body>
 </html>
